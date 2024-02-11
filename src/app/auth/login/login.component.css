@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+.col{
+    height: 100vh;
+}
+
+.left {
+   background-color: black;
+   color: rgb(163, 163, 163);
+}
+.right{
+    background: rgb(0,0,0);
+    background: linear-gradient(187deg, rgba(0,0,0,1) 0%, rgba(8,7,7,1) 0%, rgba(0,0,0,1) 100%);
+}
+.logo-img{
+    width:  64px;
+}
+
+.logo-text{
+    color: rgb(199, 199, 199);
+}
+
+.form-header{
+    color: rgb(199, 199, 199);
+}
+
+.form-label{
+    color: rgb(163, 163, 163);
+}
