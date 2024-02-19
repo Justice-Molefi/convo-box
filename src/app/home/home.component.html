@@ -1,11 +1,7 @@
 <div class="main">
     <div class="row">
         <div class="col-md-3 left">
-            <div class="profile d-flex align-items-center mt-3 mb-5 ps-2">
-                <div class="avatar bg-white me-4">
-                    <img src="assets/images/logo.png"
-                      class="rounded-circle img-fluid" style="width: 50px;"/>
-                  </div>
+            <div class="profile d-flex justify-content-center mt-4 mb-5 ps-2">
                 <div class="user-name fw-bold fs-5">Nkopane Molefi</div>
             </div>
             <div class="rooms ps-2">
@@ -18,42 +14,20 @@
                     </div>
                 </div>
                 <hr/>
-                <div class="room-list mt-2">
-                    <div class="room d-flex align-items-center pb-1">
-                        <div class="avatar bg-white me-2">
-                            <img src="assets/images/logo.png"
-                              class="rounded-circle img-fluid" style="width: 35px;"/>
-                        </div>
+                <div class="room-list mt-2 px-1">
+                    <div class="room pb-1">
                         <div class="room-info">
                             <div class="room-name">React Developers</div>
                             <div class="online-count">online  4</div>
                         </div>
                     </div>
-                    <div class="room d-flex align-items-center pb-1">
-                        <div class="avatar bg-white me-2">
-                            <img src="assets/images/logo.png"
-                              class="rounded-circle img-fluid" style="width: 35px;"/>
-                        </div>
+                    <div class="room pb-1">
                         <div class="room-info">
                             <div class="room-name">React Developers</div>
                             <div class="online-count">online  4</div>
                         </div>
                     </div>
-                    <div class="room d-flex align-items-center pb-1">
-                        <div class="avatar bg-white me-2">
-                            <img src="assets/images/logo.png"
-                              class="rounded-circle img-fluid" style="width: 35px;"/>
-                        </div>
-                        <div class="room-info">
-                            <div class="room-name">React Developers</div>
-                            <div class="online-count">online  4</div>
-                        </div>
-                    </div>
-                    <div class="room d-flex align-items-center pb-1">
-                        <div class="avatar bg-white me-2">
-                            <img src="assets/images/logo.png"
-                              class="rounded-circle img-fluid" style="width: 35px;"/>
-                        </div>
+                    <div class="room pb-1">
                         <div class="room-info">
                             <div class="room-name">React Developers</div>
                             <div class="online-count">online  4</div>
@@ -68,68 +42,77 @@
         </div>
         <div class="col-md-7 mid">
             <div class="chat-header d-flex justify-content-center align-items-center fs-2 p-3">
-                <div class="avatar bg-white me-4">
-                    <img src="assets/images/logo.png"
-                      class="rounded-circle img-fluid" style="width: 60px;"/>
-                  </div>
                 <div class="header-text">
                     React Developers
                 </div>
             </div>
             <hr>
-            <div class="chat px-2 pt-3 flex-column">
+            <div class="chat px-3 pt-3">
+               <div class="container d-flex justify-content-end">
+                <div class="message d-flex pt-3 flex-row-reverse current-user">
+                     <div class="message-container">
+                       <div class="message-details d-flex align-items-center">
+                           <p class="username me-1 fw-semibold">Justice</p>
+                           <p class="separator">~</p>
+                           <p class="time ms-1">12:00</p>
+                       </div>
+                       <div class="message-text py-1 px-2 fs-6">
+                           <p>Wow, I hope you guys are enjoying yourselves in here.</p>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+               <div class="message-container d-flex justify-content-start">
                 <div class="message d-flex pt-3">
-                 <div class="avatar bg-white me-1">
-                        <img src="assets/images/logo.png"
-                          class="rounded-circle img-fluid" style="width: 25px;"/>
-                  </div>
-                  <div class="message-container">
-                    <div class="message-details d-flex align-items-center">
-                        <p class="username me-1 fw-semibold">Justice</p>
-                        <p class="separator">~</p>
-                        <p class="time ms-1">12:00</p>
+                     <div class="message-container">
+                       <div class="message-details d-flex align-items-center">
+                           <p class="username me-1 fw-semibold">Justice</p>
+                           <p class="separator">~</p>
+                           <p class="time ms-1">12:00</p>
+                       </div>
+                       <div class="message-text py-1 px-2 fs-6">
+                           <p>Wow, I hope you guys are enjoying yourselves in here.</p>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+            </div>
+            <div class="input-container">
+                <form class="d-flex">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" placeholder="Type your message..."></textarea>
                     </div>
-                    <div class="message-text p-1 fs-6">
-                        <p>Wow, I hope you guys are enjoying yourselves in here.</p>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+               </div>
+        </div>
+        <div class="col-md-2 right px-2">
+            <div class="logout d-flex justify-content-evenly pt-4 mb-4">
+                <button class="leave-group-btn btn">
+                    Leave Group
+                </button>
+                <button class="logout-btn btn">
+                    Logout
+                </button>
+            </div>
+            <div class="members mt-5">
+                <div class="header d-flex mb-1">
+                    <div class="icon me-2">
+                        <fa-icon [icon]="faUser"></fa-icon>
                     </div>
-                  </div>
+                    <p>Members</p>
                 </div>
-
-                <div class="message d-flex pt-3">
-                    <div class="avatar bg-white me-1">
-                           <img src="assets/images/logo.png"
-                             class="rounded-circle img-fluid" style="width: 25px;"/>
-                     </div>
-                     <div class="message-container">
-                       <div class="message-details d-flex align-items-center">
-                           <p class="username me-1 fw-semibold">Justice</p>
-                           <p class="separator">~</p>
-                           <p class="time ms-1">12:00</p>
-                       </div>
-                       <div class="message-text p-1 fs-6">
-                           <p>Wow, I hope you guys are enjoying yourselves in here.</p>
-                       </div>
-                     </div>
-                   </div>
-
-                   <div class="message d-flex pt-3">
-                    <div class="avatar bg-white me-1">
-                           <img src="assets/images/logo.png"
-                             class="rounded-circle img-fluid" style="width: 25px;"/>
-                     </div>
-                     <div class="message-container">
-                       <div class="message-details d-flex align-items-center">
-                           <p class="username me-1 fw-semibold">Justice</p>
-                           <p class="separator">~</p>
-                           <p class="time ms-1">12:00</p>
-                       </div>
-                       <div class="message-text p-1 fs-6">
-                           <p>Wow, I hope you guys are enjoying yourselves in here.</p>
-                       </div>
-                     </div>
-                   </div>
+                <hr>
+                <div class="members-list mt-2">
+                    <div class="member pb-1">
+                        <div class="member-info">
+                            <div class="member-name">Lesedi</div>
+                            <div class="online-status">online</div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <div class="col-md-2 right"></div>
     </div>
 </div>

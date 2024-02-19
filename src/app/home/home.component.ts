@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faUsersRectangle, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faUsersRectangle, faPlus, faUser } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-home',
@@ -12,4 +12,5 @@ import { faUsersRectangle, faPlus } from '@fortawesome/free-solid-svg-icons'
 export class HomeComponent {
   faUsersRect = faUsersRectangle;
   faPlus = faPlus;
+  faUser = faUser;
 }

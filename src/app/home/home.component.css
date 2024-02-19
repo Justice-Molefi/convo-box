@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-.left{
+.left, .right{
     background-color: rgb(26, 26, 26);
 }
 
@@ -21,6 +21,10 @@
 .avatar{
     border-radius: 50%;
     border: 1px solid white;
+}
+
+.message{
+    max-width: 70%;
 }
 .message .avatar{
     height: 25px;
@@ -40,11 +44,17 @@
     color: rgb(176, 172, 172);
 }
 
+
 .message .message-text{
  background-color: rgb(26, 26, 26);
  color: rgb(229, 229, 229);
  border-radius: 3px;
 }
+
+.current-user .message-text{
+    background-color: rgb(7, 160, 245); 
+}
+
 .user-name{
     color: white;
 }
@@ -62,18 +72,26 @@ hr{
 .create-room-btn {
     position: fixed;
     bottom: 0;
-    background: black;
+    background: rgb(40, 40, 40);
     border-radius: 0;
     color: white;
 }
 
-.room-name{
+.logout-btn, .leave-group-btn{
+    background: rgb(40, 40, 40);
+    color: white;
+}
+.room-name, .member-name{
     color: white;
 }
 
-.online-count{
-    font-size: 12px;
+.online-count, .online-status{
+    font-size: 10px;
     color: rgb(7, 160, 245);
 }
 
+
+.members .header{
+ color: rgb(176, 172, 172);
+}
 
